@@ -1056,7 +1056,7 @@ input[type="text"] {
 
 .publications {
   font-size: 14pt;
-  padding-bottom: 5em;
+  padding: 4em 0; 
 }
 
 /*# sourceMappingURL=style.css.map */
