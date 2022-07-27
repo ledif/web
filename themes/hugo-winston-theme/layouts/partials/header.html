@@ -1,0 +1,17 @@
+<div class='header'>
+  {{ $currentPage := . }}
+  
+  <a class="header-logo" href="{{ .Site.BaseURL }}">{{ if ne .Name "Hello" }}Home{{ end }}</a>
+  <div class="menu-main">
+    <ul>
+        {{ range .Site.Menus.main }}
+            <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+                <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+        {{end}}
+    </ul>
+  </div>
+  <div id="toggle-menu-main-mobile" class="hamburger-trigger">
+    <button class="hamburger">Menu</button>
+  </div>
+</div>
