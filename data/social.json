@@ -7,13 +7,8 @@
     },
     {
       "name": "github",
-      "url": "https://github.com/ledif",
+      "url": "https://github.com/adamfidel",
       "image": "images/social/github.svg"
-    },
-    {
-      "name": "twitter",
-      "url": "https://twitter.com/ledif",
-      "image": "images/social/twitter.svg"
     }
   ]
 }
