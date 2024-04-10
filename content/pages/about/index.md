@@ -11,4 +11,4 @@ daily driver language.
 
 For more detailed information, please see my [resume](AdamFidel.pdf).
 
-You can reach me at [contact@fidel.id](mailto:contact@fidel.id) or on Twitter at [@ledif](https://twitter.com/ledif).
+You can reach me at [adam@fidel.cloud](mailto:adam@fidel.cloud).
