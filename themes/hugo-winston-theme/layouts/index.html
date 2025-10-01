@@ -3,12 +3,34 @@
 
 {{ define "main" }}
 
-  {{ if .Site.Params.showAuthorOnHomepage }}
-    {{ partial "author-large.html" . }}
-  {{ end }}
+  <!-- First row: Image and Bio in two columns -->
+  <div class="homepage-row homepage-main">
+    <div class="homepage-image-column">
+      <img src="{{ "/images/slingshot-collage.png" | relURL }}" alt="Slingshot Collage" class="homepage-featured-image" />
+    </div>
+    <div class="homepage-bio-column">
+      <div class="intro-content">{{ .Content }}</div>
+    </div>
+  </div>
 
-  <div class="intro">
-    <div class="intro-content">{{ .Content }}</div>
+  <!-- Second row: Name on left, Social links on right -->
+  <div class="homepage-row homepage-bottom-row">
+    <div class="homepage-name-left">
+      <span class="homepage-author-name">{{ .Site.Data.author.name }}</span>
+    </div>
+    <div class="homepage-social-right">
+      {{ if .Site.Data.social.links }}
+      <div class="social-links">
+        {{ range .Site.Data.social.links }}
+          <span class="social-icon social-icon-{{ .name | urlize }}">
+            <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="me">
+              <img src="{{ .image | relURL }}" width="24" height="24" alt="{{ .name }}"/>
+            </a>
+          </span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
   </div>
 
   {{ if .Site.Params.showPostsOnHomepage }}
