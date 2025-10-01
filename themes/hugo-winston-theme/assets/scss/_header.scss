@@ -88,6 +88,10 @@
   justify-content: center;
   transition: background-color 0.2s ease;
   
+  @media (max-width: 991px) {
+    display: none;
+  }
+  
   &:hover {
     background-color: var(--base-offset-color);
   }

@@ -1,9 +1,9 @@
 {
   "links": [
     {
-      "name": "github",
-      "url": "https://github.com/ledif",
-      "image": "images/social/github.svg"
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/pub/adam-fidel/36/61b/233",
+      "image": "images/social/linkedin.svg"
     },
     {
       "name": "mastodon",
@@ -11,9 +11,9 @@
       "image": "images/social/mastodon.svg"
     },
     {
-      "name": "linkedin",
-      "url": "https://www.linkedin.com/pub/adam-fidel/36/61b/233",
-      "image": "images/social/linkedin.svg"
+      "name": "github",
+      "url": "https://github.com/ledif",
+      "image": "images/social/github.svg"
     }
   ]
 }
