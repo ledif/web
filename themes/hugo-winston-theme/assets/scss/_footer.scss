@@ -16,5 +16,15 @@
         }
       }
     }
+    img {
+      transition: filter 0.2s ease;
+    }
   }
+
+// Dark mode adjustments
+[data-theme="dark"] {
+  .footer-social .social-icon img {
+    filter: invert(1);
+  }
+}
   

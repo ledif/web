@@ -70,3 +70,30 @@
     }
   }
 }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: var(--base-offset-color);
+  }
+  
+  .theme-toggle-icon {
+    font-size: 18px;
+    line-height: 1;
+  }
+}

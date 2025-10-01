@@ -90,9 +90,17 @@
         
         img {
           display: block;
+          transition: filter 0.2s ease;
         }
       }
     }
+  }
+}
+
+// Dark mode adjustments
+[data-theme="dark"] {
+  .social-links .social-icon img {
+    filter: invert(1);
   }
 }
 
@@ -109,9 +117,7 @@
     margin: 0 auto;
   }
   
-  .homepage-bottom-row {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
+  .homepage-social-row {
+    justify-content: center;
   }
 }

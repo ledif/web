@@ -9,6 +9,13 @@
   --text-color: #4e5157;
 }
 
+[data-theme="dark"] {
+  --base-color: #1a1a1a;
+  --base-offset-color: #2d2d2d;
+  --heading-color: #ffffff;
+  --text-color: #b0b0b0;
+}
+
 $breakpoints: (
   'small': 767px,
   'medium': 992px,
