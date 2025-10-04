@@ -18,8 +18,12 @@ var themeIcon = document.querySelector('.theme-toggle-icon');
 var themeIconMobile = document.querySelector('.theme-toggle-icon-mobile');
 var html = document.documentElement;
 
-// Check for saved theme or default to light mode
-var savedTheme = localStorage.getItem('theme') || 'light';
+// Check for saved theme or default to browser preference
+var savedTheme = localStorage.getItem('theme');
+if (!savedTheme) {
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  savedTheme = prefersDark ? 'dark' : 'light';
+}
 html.setAttribute('data-theme', savedTheme);
 updateThemeIcons(savedTheme);
 
