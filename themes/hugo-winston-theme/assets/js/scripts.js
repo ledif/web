@@ -47,7 +47,7 @@ function toggleTheme() {
 }
 
 function updateThemeIcons(theme) {
-  var icon = theme === 'dark' ? '☀️' : '🌙';
+  var icon = theme === 'dark' ? '🌒' : '🌙';
   
   if (themeIcon !== null) {
     themeIcon.textContent = icon;
