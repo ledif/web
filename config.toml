@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://fidel.cloud/"
 languageCode = "en-us"
 title = "Adam Fidel"
 themesDir = "themes"
